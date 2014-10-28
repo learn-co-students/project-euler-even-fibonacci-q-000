@@ -13,6 +13,7 @@ class EvenFibonacci
     i = 0
     while i <= limit
       i = @first + @second
+      break if i > limit
       fibonacci_array << i if i.even?
       @first = @second
       @second = i
