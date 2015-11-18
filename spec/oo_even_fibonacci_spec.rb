@@ -5,7 +5,7 @@ describe "EvenFibonacci" do
     end
 
     it 'returns the correct sum when the limit is 100' do
-      expect(EvenFibonacci.new(100).sum).to eq(44)
+      expect(EvenFibonacci.new(100).sum).to eq(188)
     end
 
     it 'returns the correct sum when the limit is 4000000' do
