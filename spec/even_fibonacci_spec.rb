@@ -4,7 +4,7 @@ describe "#even_fibonacci_sum" do
   end
 
   it 'returns the correct sum when the limit is 100' do
-    expect(even_fibonacci_sum(100)).to eq(44)
+    expect(even_fibonacci_sum(100)).to eq(188)
   end
 
   it 'returns the correct sum when the limit is 4000000' do
