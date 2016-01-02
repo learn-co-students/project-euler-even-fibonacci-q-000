@@ -22,3 +22,7 @@ class EvenFibonacci
 end
 
 end
+
+even_fibonacci = EvenFibonacci.new(4000000)
+
+puts even_fibonacci.sum
