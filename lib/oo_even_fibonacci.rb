@@ -26,3 +26,10 @@ end
 even_fibonacci = EvenFibonacci.new(4000000)
 
 puts even_fibonacci.sum
+
+# the sum of the even-valued Fibonacci sequence terms 
+# whose values do not exceed four million is 4613732
+# by running it in the terminal from 
+# the current directory (project-euler-even-fibonacci-q-000), like so
+# ruby lib/oo_even_fibonacci.rb
+# 
