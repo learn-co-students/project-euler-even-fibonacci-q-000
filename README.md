@@ -6,4 +6,8 @@
 - [PYTHON](http://stackoverflow.com/questions/9053545/finding-the-sum-of-even-valued-terms-in-fibonacci-sequence)
 
 ## Personal Notes
+* variables `first` and `second` represent the last two terms in the sequence.
+
 This was my first time working with algorithms.  The first few attempts were based off of examples that had to do with heavy recursion and memoization.  I'm satisfied that this is a literate and reasonable solution
+
+
