@@ -4,15 +4,15 @@
 #   end
 #   cache[n] ||= fibo(n-1, cache) + fibo(n-2, cache)
 # end 
-@cache = [0,1]
+@terms = Array.new
 
-def even_fibonacci_sum(limit)
-  # check if result is in cache
-  # if it is then return it, otherwise do a calculation and save result
-  return @cache[n] if @cache[n]
-
-  # calculation
-  @cache[n] = fibo(n-1) + fibo(n-2)
+def even_fibonacci_sum(n)
+  return n if n < 2
+  if recursion % 2 == 0
+    
+  end
 end
 
-
+def recursion
+  even_fibonacci_sum(n-1) + even_fibonacci_sum(n-2)
+end
