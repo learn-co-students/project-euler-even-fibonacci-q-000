@@ -1,1 +1,2 @@
-# Implement your object-oriented solution here!
+class EvenFibonacciSum
+end
