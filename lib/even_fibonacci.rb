@@ -1,5 +1,12 @@
-def even_fibonacci_sum(n)
-  return n if n < 2
-  return n if n.odd?
-  even_fibonacci_sum(n-1) + even_fibonacci_sum(n-2)
+def even_fibonacci_sum(limit)
+  total = 0
+  first, second = 0,1 
+  while second < limit
+    first, second = second, first + second
+    if first % 2 == 0
+     total += first
+    end
+  end
+  total
 end
+
