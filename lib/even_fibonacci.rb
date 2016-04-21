@@ -4,7 +4,7 @@ def even_fibonacci_sum(limit)
   while sequence[-1] < limit
     sequence.push(sequence[-1] + sequence[-2])
   end
-  return sequence.keep_if{|num| num.even? && num < limit}.reduce(:+)
+  sequence.keep_if{|num| num.even? && num < limit}.reduce(:+)
  end
 
 
