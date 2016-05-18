@@ -1,6 +1,3 @@
-# Implement your object-oriented solution here!
-require 'pry'
-
 class EvenFibonacci
 
   def initialize(limit)
