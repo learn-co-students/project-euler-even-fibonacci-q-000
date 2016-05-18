@@ -17,7 +17,6 @@
 def even_fibonacci_sum(limit)
   fib = 1
   fib_sec = 1
-  even_fib_sum = 0
   fibs = []
   while fib_sec < limit
     fib_new = fib + fib_sec

@@ -21,8 +21,7 @@ class EvenFibonacci
 
   def sum
     even_fibs
-    @sum = @even_fibs.inject(:+)
-    @sum
+    sum = @even_fibs.inject(:+)
   end
 
 end
