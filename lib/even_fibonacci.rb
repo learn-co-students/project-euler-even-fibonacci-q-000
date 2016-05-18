@@ -13,7 +13,6 @@
 #   end
 # end
 
-require 'pry'
 
 def even_fibonacci_sum(limit)
   fib = 1
@@ -24,9 +23,7 @@ def even_fibonacci_sum(limit)
     fib_new = fib + fib_sec
     fib = fib_sec
     fib_sec = fib_new
-    if (fib_sec < limit) && (fib_sec %2 == 0)
-      fibs << fib_sec
-    end
+    fibs << fib_sec if (fib_sec < limit) && (fib_sec %2 == 0)
   end
   fibs.inject(:+)
 end
