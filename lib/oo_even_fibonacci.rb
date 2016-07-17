@@ -1,24 +1,25 @@
 class EvenFibonacci
   def initialize(limit)
     @limit = limit
+    @sequence = [1, 2]
+  end
+
+  def fibonaccinize
+    c1 = 0
+    c2 = 1
+    until @sequence[c1] + @sequence[c2] > @limit
+      @sequence.push(@sequence[c1] + @sequence[c2])
+      c1 += 1
+      c2 += 1 
+    end
   end
 
   def sum
-    sequence = [1, 2]
-    cnt1 = 0
-    cnt2 = 1
-    @limit.times do 
-      if sequence[cnt1] + sequence[cnt2] < @limit
-        sequence.push(sequence[cnt1] + sequence[cnt2])
-        cnt1 += 1
-        cnt2 += 1 
-      end
-    end
-    total = sequence.select{|num| num % 2 == 0}
+    fibonaccinize
+    total = @sequence.select{|num| num % 2 == 0}
     return total.inject(:+)
   end
-
 end
 
-# Very inefficient logic. This will loop through many
-# more times than is necessary.
+# Optimized from previous attempt
+# Broke out into separate instance methods
