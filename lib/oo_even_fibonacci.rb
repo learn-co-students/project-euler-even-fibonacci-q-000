@@ -5,12 +5,16 @@ class EvenFibonacci
     @limit = limit
   end
 
-  def sum
-    fibs = [1,1]
-    while (new_fib = fibs[-1] + fibs[-2]) < @limit do
-      fibs << new_fib
-    end
-    fibs.inject(0) { |sum, i| i.even? ? sum + i : sum }
+def find_fibs
+  fibs = [1,1]
+  while (new_fib = fibs[-1] + fibs[-2]) < @limit do
+    fibs << new_fib
   end
+  return fibs
+end
+
+def sum
+  find_fibs.inject(0) { |sum, i| i.even? ? sum + i : sum }
+end
 
 end
