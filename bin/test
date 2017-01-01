@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require_relative '../lib/even_fibonacci.rb'
+
+even_fibonacci_sum(10)
